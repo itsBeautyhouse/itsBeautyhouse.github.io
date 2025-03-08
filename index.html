@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty House - سالن زیبایی</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Vazir', sans-serif; direction: rtl; text-align: center; background: linear-gradient(to bottom, #1e1e1e, #3d3d3d); color: white; margin: 0; display: flex; flex-direction: column; align-items: center; overflow-x: hidden; width: 100vw;font-size: 18px; }
+        header { background: linear-gradient(to right, #d4af37, #8d6f2d); padding: 100px 20px 40px; color: white; font-size: 24px; position: relative; width: 100%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); text-align: center; }
+        header h1 { margin: 0; }
+        h2 {margin-bottom: 20px;}
+        nav { background: black; padding: 10px; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: center; gap: 20px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); }
+        nav a { color: gold; text-decoration: none; padding: 10px 20px; transition: 0.3s; font-weight: bold; border-radius: 5px; }
+        nav a:hover { background: gold; color: black; }
+        section { width: 80%; max-width: 800px; margin: 100px auto 20px; padding: 30px; background: rgba(255, 215, 0, 0.2); border-radius: 10px; box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5); text-align: center; scroll-margin-top: 80px;}
+        .services-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center; }
+        .service-box { background: black; color: gold; padding: 20px; border-radius: 10px; width: 200px; text-align: center; cursor: pointer; transition: 0.3s; box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5); }
+        .service-box:hover { background: gold; color: black; }
+        footer { margin-top: 20px; padding: 15px; background: black; color: gold; font-weight: bold; width: 100%; text-align: center; }
+        .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">درباره ما</a>
+        <a href="#services">خدمات</a>
+        <a href="#gallery">گالری</a>
+        <a href="#contact">تماس با ما</a>
+    </nav>
+    
+    <header>
+        <img src="android-chrome-512x512.png" alt="Beauty House Logo" width="200">
+        <h1>Beauty House</h1>
+        <p>زیبایی شما، تخصص ما!</p>
+    </header>
+    
+    <section id="about">
+        <h2>درباره ما</h2>
+        <p>بیوتی هاوس با تیمی حرفه‌ای آماده ارائه بهترین خدمات زیبایی به شما عزیزان است.</p>
+    </section>
+    
+    <section id="services">
+        <h2>خدمات ما</h2>
+        <div class="services-container">
+            <div class="service-box" onclick="location.href='#services'">میکاپ VIP عروس</div>
+            <div class="service-box" onclick="location.href='#services'">آرایش و شینیون</div>
+            <div class="service-box" onclick="location.href='#services'">کوتاهی مو</div>
+            <div class="service-box" onclick="location.href='#services'">لیفت و لمینیت مژه و ابرو</div>
+            <div class="service-box" onclick="location.href='#services'">مراقبت از پوست و مو</div>
+            <div class="service-box" onclick="location.href='#services'">کاشت ناخن و طراحی</div>
+            <div class="service-box" onclick="location.href='#services'">رنگ و لایت</div>
+            <div class="service-box" onclick="location.href='#services'">کاشت مژه</div>
+            <div class="service-box" onclick="location.href='#services'">کراتین، احیا و صافی مو</div>
+            <div class="service-box" onclick="location.href='#services'">رفع مو خوره</div>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <h2>گالری تصاویر</h2>
+        <div class="gallery">
+            <img src="images/image2.jpg" alt="آرایشگاه ۱">
+            <img src="images/image1.jpg" alt="آرایشگاه ۲">
+            <img src="images/image3.jpg" alt="آرایشگاه ۳">
+            <img src="images/image4.jpg" alt="آرایشگاه ۴">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <p>آدرس: مهرشهر، چمن ۳، دهکده آفتاب، کوچه لیلیوم</p>
+        <p>تلفن: ۰۹۳۵۹۲۶۳۴۲۶</p>
+        <p>اینستاگرام:<br> 
+            <a href="https://instagram.com/its.beauty.house" style="color: gold; text-decoration: none; direction: ltr;">its.beauty.house@</a>
+          </p>
+    </section>
+    
+    <footer>
+        <p>تمامی حقوق محفوظ است - Beauty House &copy; 2025</p>
+    </footer>
+</body>
+</html>
